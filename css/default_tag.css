@@ -1,0 +1,15 @@
+/*=== Default Tag Logic ===*/
+
+body {
+	justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    margin: 0px;
+}
