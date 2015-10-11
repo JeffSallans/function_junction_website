@@ -11,7 +11,10 @@
     background-color: white;
 }
 
-.nav-button-container div {
+.nav-button-container a {
+
+    /*Remove default underline*/
+    text-decoration: none;
 
     border-radius: 30px 30px 30px 30px;
     -moz-border-radius: 30px 30px 30px 30px;
@@ -31,21 +34,32 @@
     text-align: center;
 }
 
-.nav-button-container div:nth-child(3n+0).active {
+.nav-button-container a:nth-child(3n+0).active {
     background-color: rgb(0,153,57);
+    color: white;
 }
 
-.nav-button-container div:nth-child(3n+0) {
+.nav-button-container a:nth-child(3n+0) {
     border-color: rgb(0,153,57);
     color: rgb(0,153,57);
 }
 
-.nav-button-container div:nth-child(3n+1) {
+.nav-button-container a:nth-child(3n+1).active {
+    background-color: rgb(51,105,232);
+    color: white;
+}
+
+.nav-button-container a:nth-child(3n+1) {
     border-color: rgb(51,105,232);
     color: rgb(51,105,232);
 }
 
-.nav-button-container div:nth-child(3n+2) {
+.nav-button-container a:nth-child(3n+2).active {
+    background-color: rgb(213,15,37);
+    color: white;
+}
+
+.nav-button-container a:nth-child(3n+2) {
     border-color: rgb(213,15,37);
     color: rgb(213,15,37);
 }

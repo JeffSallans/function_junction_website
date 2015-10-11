@@ -63,7 +63,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1548,
+				"buffer_size": 2066,
 				"line_ending": "Windows"
 			}
 		},
@@ -71,17 +71,41 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 500,
+				"buffer_size": 678,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/test.css",
+			"file": "css/navbar.css",
 			"settings":
 			{
-				"buffer_size": 758,
+				"buffer_size": 971,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/default_tag.css",
+			"settings":
+			{
+				"buffer_size": 254,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/header.css",
+			"settings":
+			{
+				"buffer_size": 2497,
 				"line_ending": "Windows",
 				"name": "h3 {"
+			}
+		},
+		{
+			"file": "css/simple_depend.css",
+			"settings":
+			{
+				"buffer_size": 630,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -142,6 +166,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"44%",
 			"h3",
 			"h2"
 		],
@@ -151,6 +176,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"70%"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -161,7 +187,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -169,15 +195,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1548,
+						"buffer_size": 2066,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								315,
-								315
+								717,
+								717
 							]
 						],
 						"settings":
@@ -186,7 +212,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 294.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -196,15 +222,15 @@
 					"file": "css/style.css",
 					"settings":
 					{
-						"buffer_size": 500,
+						"buffer_size": 678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								327,
-								327
+								365,
+								365
 							]
 						],
 						"settings":
@@ -220,18 +246,71 @@
 				},
 				{
 					"buffer": 2,
-					"file": "css/test.css",
+					"file": "css/navbar.css",
 					"settings":
 					{
-						"buffer_size": 758,
+						"buffer_size": 971,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								635,
-								635
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/default_tag.css",
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/header.css",
+					"settings":
+					{
+						"buffer_size": 2497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
 							]
 						],
 						"settings":
@@ -240,6 +319,33 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/simple_depend.css",
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -256,7 +362,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 30.0
 	},
 	"layout":
 	{
@@ -283,7 +389,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":

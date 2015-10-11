@@ -39,3 +39,8 @@
 	justify-content: space-around;
 }
 
+/*=== Location ===*/
+
+.map {
+	margin-top: 20px;
+}

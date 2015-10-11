@@ -36,7 +36,7 @@
 
 /*=== Defaults ===*/
 
-body:not([no-simple-depend]), div:not([no-simple-depend]), span:not([no-simple-depend]) {
+body:not([no-simple-depend]), div:not([no-simple-depend]), span:not([no-simple-depend]), a:not([no-simple-depend]) {
 	display: inline-block;
 	position: relative;
 }
