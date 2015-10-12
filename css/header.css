@@ -5,7 +5,7 @@
 
 h3 {
     padding: 10px;
-    padding-left: 30px;
+    padding-left: 60px;
     padding-right: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -28,7 +28,14 @@ h3 {
 }
 
 .section:nth-child(3n+0) h3 {
-    background-color: red;
+    background: rgba(215,15,38,1);
+    background: -moz-linear-gradient(left, rgba(215,15,38,1) 0%, rgba(215,15,38,1) 69%, rgba(176,12,32,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(215,15,38,1)), color-stop(69%, rgba(215,15,38,1)), color-stop(100%, rgba(176,12,32,1)));
+    background: -webkit-linear-gradient(left, rgba(215,15,38,1) 0%, rgba(215,15,38,1) 69%, rgba(176,12,32,1) 100%);
+    background: -o-linear-gradient(left, rgba(215,15,38,1) 0%, rgba(215,15,38,1) 69%, rgba(176,12,32,1) 100%);
+    background: -ms-linear-gradient(left, rgba(215,15,38,1) 0%, rgba(215,15,38,1) 69%, rgba(176,12,32,1) 100%);
+    background: linear-gradient(to right, rgba(215,15,38,1) 0%, rgba(215,15,38,1) 69%, rgba(176,12,32,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d70f26', endColorstr='#b00c20', GradientType=1 );
 }
 
 .section:nth-child(3n+1) h3 {

@@ -10,6 +10,11 @@
 
 [auto-max-width], [max] {
 	display: block !important;
+	width: 100%;
+}
+
+[block], [blk] {
+	display: block !important;
 }
 
 [manual-flex], [flex] {

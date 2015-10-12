@@ -1,3 +1,16 @@
+/*=== Primary Colors ===*/
+
+/*
+Based on Google's colors
+
+red= rgba(215,15,38,1)
+dark-red= rgba(176,12,32,1)
+blue= rgba(73,155,234,1)
+dark-blue= rgba(32,124,229,1)
+green= rgba(0,207,59,1)
+dark-green= rgba(0,168,59,1)
+*/
+
 /*=== Overall Sizing ===*/
 
 .container {
@@ -37,10 +50,71 @@
 	/*Flex*/
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
+}
+
+/*
+If flex container is large enough,
+allow context to become two columns
+*/
+.flex-container .possible-half {
+	flex-grow: 1;
+    flex-basis: 300px;
 }
 
 /*=== Location ===*/
 
 .map {
 	margin-top: 20px;
+}
+
+/*=== Quote ===*/
+
+/*
+Smaller text with more spacing. 
+To give a different flavor to a text block. 
+Also a colored line
+*/
+p.quote {
+
+    border-left: 5px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 90%;
+    max-width: 300px;
+    line-height: 1.5;
+    height: 100%;
+
+    /*Give a smaller flex basis*/
+    flex-basis: 300px;
+}
+
+p.quote:nth-child(3n+0) {
+	border-color: rgba(0,168,59,1); /*dark-green*/
+}
+
+p.quote:nth-child(3n+1) {
+	border-color: rgba(32,124,229,1); /*dark-blue*/
+}
+
+p.quote:nth-child(3n+2) {
+	border-color: rgb(213,15,37,1); /*dark-red*/
+}
+
+/*=== Profile Picture ===*/
+
+img.profile {
+
+	/*Set max for flex item resizing*/
+	max-width: 300px;
+    max-height: 300px;
+
+    margin: 20px;
+
+    /*Give a smaller flex basis*/
+    flex-basis: 300px;
 }

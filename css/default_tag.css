@@ -3,6 +3,9 @@
 body {
 	justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+
+    /*always have scrollbar to avoid navigation jossiling*/
+    overflow-y: scroll;
 }
 
 p {
@@ -12,4 +15,12 @@ p {
     padding-bottom: 10px;
     font-size: 17px;
     margin: 0px;
+
+    /*Add more spacing to give a more modern look*/
+    line-height: 1.3;
+
+    /*Don't go over 400px per line
+     because there will be too many words per line, 
+     target 70 to 80 characters*/
+    max-width: 400px;
 }
