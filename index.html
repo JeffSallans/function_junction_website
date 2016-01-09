@@ -21,14 +21,7 @@
 </head>
 
 <body ng-controller="MainCtrl">
-	<div class="overlay">
-		<div class="overlay__side-nav">
-			<li>Home</li>
-			<li>Services</li>
-			<li>Staff</li>
-			<li>Contact Us</li>
-		</div>
-	</div>
+	<div class="overlay"></div>
 	<div class="scrollable">
 		<div class="header">
 			<img src="img/logo.jpg">
@@ -39,13 +32,31 @@
 				</div>
 			</h2>
 		</div>
-		<div class="content" ng-view>
-			sample page text
-		</div>
-		<div class="footer">
-			<span>Copyright &copy; {{year}} Function Junction Therapy, LLC</span>
-			<span class="footer__right">Created by <a target="_blank" href="http://github.com/JeffSallans">Jeff Sallans</a></span>
-		</div>
+		<div class="container">
+			<div class="side-nav">
+				<a href="index.html#/home">
+					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
+					<span class="side-nav__desc">Home</span></a>
+				<a href="index.html#/service">
+					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
+					<span class="side-nav__desc">Services</span></a>
+				<a href="index.html#/staff">
+					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
+					<span class="side-nav__desc">Staff</span></a>
+				<a href="index.html#/location">
+					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
+					<span class="side-nav__desc">Contact Us</span></a>
+			</div>
+			<div>
+				<div class="content" ng-view>
+					sample page text
+				</div>
+				<div class="footer">
+					<span>Copyright &copy; {{year}} Function Junction Therapy, LLC</span>
+					<span class="footer__right">Created by <a target="_blank" href="http://github.com/JeffSallans">Jeff Sallans</a></span>
+				</div>
+			</div>
+		<div>
 	</div>
 	<!-- Load JavaScript -->
 

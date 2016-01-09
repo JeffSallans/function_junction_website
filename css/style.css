@@ -57,11 +57,36 @@ a {
     width: 100%;
 }
 
+/* center content and navbar */
+.container {
+    margin: 0 auto;
+    width: 50rem;
+}
+
+.container > div {
+
+    position: absolute;
+
+    margin-left: 10rem;
+
+    /*
+    container width= 50rem
+    margin = 10rem
+    */
+    width: calc(50rem - 10rem);
+}
+
+.container > div > div {
+
+    position: relative;
+}
+
+/* contains the detail for the interchangable screens */
 .content {
 
-    /* pos */
-    margin: 0 auto;
-    width: 40rem;
+    /* pos to stack content over nav bar*/
+    position: absolute;
+
     /* 
         view port height = 100vh
         image padding = 1rem 
