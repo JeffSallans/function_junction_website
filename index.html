@@ -1,94 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="functionJunctionApp">
 <head>
 	<title>Function Junction</title>
 
-	<!-- Load CSS libraries -->
+	<!-- Mobile Friendly -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Itim|Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="css/simple_depend.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 	<!-- Load custom site CSS -->
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="css/default_tag.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-
-	<!-- Mobile Friendly -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="stylesheet" type="text/css" href="css/headerAndFooter.css">
+	
 </head>
 
-<body flex>
-	<div class="container">
-		<img src="http://placehold.it/800x100?text=[train+logo]" width="100%">
-		<div flex class="nav-bar">
-			<!--
-			<div max class="train">
-				<div class="engine">
-				</div>
-				<div class="car">
-				</div>
-				<div class="car">
-				</div>
-				<div class="caboose">
-				</div>
-			</div>
-			-->
-			<div flex class="nav-button-container">
-				<a href="index.html" class="active">
-					Home
-				</a>
-				<a>
-					Specialties
-				</a>
-				<a>
-					About Us
-				</a>
-				<a href="location.html">
-					Location
-				</a>
-			</div>
+<body ng-controller="TemplateController">
+	<div class="overlay">
+		<div class="overlay__side-nav">
+			<li>Home</li>
+			<li>Services</li>
+			<li>Staff</li>
+			<li>Contact Us</li>
 		</div>
-		<div flex class="content flex-container">
-			<div max abs class="shadow"></div>
-			<div max class="section">
-				<h3>Header 1</h3>
-				<div flex class="flex-container">
-					<p max class="possible-half">
-						Jowl pork chop bacon, drumstick turducken shank pig kielbasa andouille spare ribs shankle venison chicken cupim. T-bone jerky ham meatloaf chicken cow shank ribeye corned beef tri-tip. Pork belly sirloin bacon biltong pancetta, landjaeger cow andouille. Swine ball tip shank pancetta corned beef, chuck filet mignon tenderloin picanha jowl capicola salami pork. Swine beef ribs pig bresaola meatloaf capicola tongue rump sirloin leberkas drumstick turducken biltong jowl. Ball tip sirloin beef ribs t-bone chicken jerky. Drumstick shoulder bresaola pork leberkas landjaeger pork loin turkey andouille.
-					</p>
-					<img class="profile" src="img/dana_throne.jpg" height="300px" width="300px">
-					<!--<img class="profile" src="http://placehold.it/300x300">-->
-					<p max class="quote">
-						Pork flank tongue pork chop. Kevin biltong sirloin pork loin jowl cow capicola tail filet mignon. Cupim pastrami strip steak rump frankfurter, jerky meatloaf. Doner beef pork, pig venison leberkas pork chop kevin spare ribs. Andouille cow pork belly ground round brisket. Hamburger tri-tip andouille ball tip. Boudin shoulder tenderloin strip steak chuck biltong ham short loin ground round t-bone hamburger shankle turducken jerky.
-					</p>
-					<p max class="possible-half">
-						Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.	
-					</p>
-					<p max>
-						Turkey tenderloin ball tip, cow beef chicken pig ground round bacon tail picanha corned beef brisket sirloin. Frankfurter shoulder porchetta short ribs sirloin kevin tri-tip leberkas biltong capicola cow. Hamburger pork loin tail pork belly meatball turducken pastrami beef. Chuck kevin shoulder, venison shankle beef short loin capicola ham hock pork belly frankfurter t-bone. Ball tip swine bresaola, meatloaf prosciutto pork belly alcatra meatball frankfurter pork chop. Pork chop hamburger shank pastrami strip steak. Chicken ham hock short ribs landjaeger short loin, jowl corned beef tri-tip filet mignon frankfurter pork belly turducken.
-					</p>
+	</div>
+	<div class="scrollable">
+		<div class="header">
+			<img src="img/logo.jpg">
+			<h2>
+				Function Junction Therapy, LLC
+				<div class="header__sub-header">
+					Occupational - Physical - Speech
 				</div>
-			</div>
-			<div max class="section">
-				<h3>Header 2</h3>
-				<div flex class="flex-container">
-					<p max>
-						Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.
-					</p>
-				</div>
-			</div>
-			<div max class="section">
-				<h3>Header 3</h3>
-				<div flex class="flex-container">
-					<p max>
-						Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.
-					</p>
-				</div>
-			</div>
+			</h2>
 		</div>
-	</div>	
+		<div class="content">
+			sample page text
+		</div>
+		<div class="footer">
+			<span>Copyright &copy; {{year}} Function Junction Therapy, LLC</span>
+			<span class="footer__right">Created by <a target="_blank" href="http://github.com/JeffSallans">Jeff Sallans</a></span>
+		</div>
+	</div>
+	<!-- Load JavaScript -->
+
+	<!-- Library code -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/lodash.min.js"></script>
+
+	<!-- Project code -->
+
+	<script src="js/GoogleSheetsRepository.js"></script>
+	<script src="app.js"></script>
 </body>
 
 </html>

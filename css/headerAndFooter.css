@@ -1,0 +1,39 @@
+/*=== Page header logic ===*/
+
+.header {
+    background-color: white;
+}
+
+.header img {
+    display: block;
+    margin: 1rem auto;
+}
+
+.header h2 {
+    color: white;
+    background-color: #00a6f0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+}
+
+.header .header__sub-header {
+    font-family: sans-serif;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    font-size: .8rem;
+}
+
+.footer {
+    background-color: white;
+    width: 40rem;
+    padding: .3rem 1rem;
+    margin: 0 auto;
+    color: #999999;
+    font-size: .8rem;
+}
+
+.footer .footer__right {
+    float: right;
+}

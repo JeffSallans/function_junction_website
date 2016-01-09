@@ -10,7 +10,9 @@ Expose the root folder (and subfolders) to the web.
 
 ## Conventions
 
-[b]Simple_Depend[/b] - Strictly define position and display CSS properties from CSS attributes.  This ensures the user understands the appropriate settings that determine which CSS properties are available. 
+[b]jsDocs[/b] - JavaScript function documentation. 
+
+[b]BEM[/b] - CSS naming convention.  
 
 ## Contributors
  
