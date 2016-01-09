@@ -1,13 +1,26 @@
 "use strict";
-angular.module('functionJunctionApp', [])
-	.controller('TemplateController', ['$scope', '$http', function($scope, $http) {
+angular.module('functionJunctionApp', ['ngRoute'])
+	.config(['$routeProvider',
+	  function($routeProvider) {
+	    $routeProvider
+	      .when('/home', {
+	        templateUrl: 'home.html'
+	      })
+	      .when('/location', {
+	        templateUrl: 'location.html'
+	      })
+	      .when('/', {
+	        templateUrl: 'home.html'
+	      });
+	}])
+	.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
 		//Date for Copyright
 		var date = new Date();
 		$scope.year = date.getFullYear();
 
 		//Google Drive data variables
-		$scope.driveRepo = new GoogleSheetsRepository($http, _);
+		/*$scope.driveRepo = new GoogleSheetsRepository($http, _);
 		$scope.fileName = null;
 
 		$scope.getData = function() {
@@ -30,5 +43,6 @@ angular.module('functionJunctionApp', [])
 					console.error(error);
 				})
 		};
+		*/
 
 	}]);

@@ -7,7 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Itim|Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
 
+	<!-- for browser uniformity -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- for icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<!-- Load custom site CSS -->
 
@@ -17,7 +20,7 @@
 	
 </head>
 
-<body ng-controller="TemplateController">
+<body ng-controller="MainCtrl">
 	<div class="overlay">
 		<div class="overlay__side-nav">
 			<li>Home</li>
@@ -36,7 +39,7 @@
 				</div>
 			</h2>
 		</div>
-		<div class="content">
+		<div class="content" ng-view>
 			sample page text
 		</div>
 		<div class="footer">
@@ -48,6 +51,7 @@
 
 	<!-- Library code -->
 	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
 	<script src="js/lodash.min.js"></script>
 
 	<!-- Project code -->

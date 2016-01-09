@@ -60,7 +60,7 @@ a {
 .content {
 
     /* pos */
-    margin-left: 17rem;
+    margin: 0 auto;
     width: 40rem;
     /* 
         view port height = 100vh
@@ -78,9 +78,9 @@ a {
     font-size: 1.1rem;
 
     /* shadow */
-    -webkit-box-shadow: 0px 0px 100px 5px rgba(136,136,136,1);
-    -moz-box-shadow: 0px 0px 100px 5px rgba(136,136,136,1);
-    box-shadow: 0px 0px 100px 5px rgba(136,136,136,1);
+    -webkit-box-shadow: 0px 0px 50px 5px rgba(136,136,136,0.7);
+    -moz-box-shadow: 0px 0px 50px 5px rgba(136,136,136,0.7);
+    box-shadow: 0px 0px 50px 5px rgba(136,136,136,0.7);
 }
 
 /*=== Flex Logic ===*/
@@ -160,4 +160,12 @@ img.profile {
 
     /*Give a smaller flex basis*/
     flex-basis: 300px;
+}
+
+/*=== Page Specific ===*/
+
+.location {
+
+    /*center map*/
+    text-align: center;
 }
