@@ -25,6 +25,12 @@
     font-size: .8rem;
 }
 
+.header .header--fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+
 .footer {
 
     background-color: white;

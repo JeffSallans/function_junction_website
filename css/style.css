@@ -59,6 +59,10 @@ a {
 
 /* center content and navbar */
 .container {
+
+    /*To make side-nav absolute positioning relative to this*/
+    position: relative;
+
     margin: 0 auto;
     width: 50rem;
 }
@@ -92,7 +96,7 @@ a {
         image padding = 1rem 
         image size + header height = 240px
     */
-    min-height: calc(100vh - 1rem - 261px);
+    min-height: calc(100vh - 1rem - 262px);
     
     /* format */
     background-color: white;

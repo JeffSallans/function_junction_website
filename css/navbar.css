@@ -2,18 +2,29 @@
 
 .container .side-nav {
     display: block;
-    position: fixed;
+    position: absolute;
 
     /* Reset container style */
     margin-left: 0;
 
     background: white;
-    top: 12rem;
+    top: 1rem;
     width: 10rem;
 
     -webkit-box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5);
     -moz-box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5);
     box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5);
+}
+
+.side-nav.side-nav--fixed.side-nav--fixed {
+
+    position: fixed;
+
+    /*
+    height of titlebar = 4rem
+    space from titlebar = 1rem
+    */
+    top: 5rem;
 }
 
 .side-nav a {
@@ -24,7 +35,7 @@
     color: black;
 }
 
-.side-nav a:hover {
+.side-nav a:hover, .side-nav .side-nav--active {
     color: white;
     background-color: #00a6f0;
 }

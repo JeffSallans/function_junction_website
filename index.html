@@ -22,7 +22,7 @@
 
 <body ng-controller="MainCtrl">
 	<div class="overlay"></div>
-	<div class="scrollable">
+	<div class="scrollable" scroll-over-top>
 		<div class="header">
 			<img src="img/logo.jpg">
 			<h2>
@@ -31,19 +31,30 @@
 					Occupational - Physical - Speech
 				</div>
 			</h2>
+			<h2 class="header--fixed" ng-show="showStaticHeader">
+				Function Junction Therapy, LLC
+				<div class="header__sub-header">
+					Occupational - Physical - Speech
+				</div>
+			</h2>
 		</div>
 		<div class="container">
-			<div class="side-nav">
-				<a href="index.html#/home">
+			<div class="side-nav" ng-class="{'side-nav--fixed': showStaticHeader}">
+				<a href="index.html#/home"
+				ng-class="{'side-nav--active': currentLocation != '/service' &&
+				currentLocation != '/staff' && currentLocation != '/location'}">
 					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
 					<span class="side-nav__desc">Home</span></a>
-				<a href="index.html#/service">
+				<a href="index.html#/service"
+				ng-class="{'side-nav--active': currentLocation == '/service'}">
 					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
 					<span class="side-nav__desc">Services</span></a>
-				<a href="index.html#/staff">
+				<a href="index.html#/staff"
+				ng-class="{'side-nav--active': currentLocation == '/staff'}">
 					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
 					<span class="side-nav__desc">Staff</span></a>
-				<a href="index.html#/location">
+				<a href="index.html#/location" 
+				ng-class="{'side-nav--active': currentLocation == '/location'}">
 					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
 					<span class="side-nav__desc">Contact Us</span></a>
 			</div>
@@ -69,6 +80,7 @@
 
 	<script src="js/GoogleSheetsRepository.js"></script>
 	<script src="app.js"></script>
+	<script src="js/scrollOverTop.directive.js"></script>
 </body>
 
 </html>

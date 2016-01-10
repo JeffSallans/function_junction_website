@@ -9,15 +9,29 @@ angular.module('functionJunctionApp', ['ngRoute'])
 	      .when('/location', {
 	        templateUrl: 'location.html'
 	      })
-	      .when('/', {
+	      .otherwise({
 	        templateUrl: 'home.html'
 	      });
 	}])
-	.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
+	.controller('MainCtrl', ['$scope', '$http', '$location', 
+		function($scope, $http, $location) {
 
 		//Date for Copyright
 		var date = new Date();
+		
+		//{int}
 		$scope.year = date.getFullYear();
+
+		//{string}
+		$scope.currentLocation = $location.url();
+
+		//Set listener to update if page change
+		$scope.$on('$locationChangeSuccess', function(event) {
+		  $scope.currentLocation = $location.url();
+		});
+
+		//{bool} - True if the element is moved over the window
+		$scope.showStaticHeader = false;
 
 		//Google Drive data variables
 		/*$scope.driveRepo = new GoogleSheetsRepository($http, _);
@@ -44,5 +58,7 @@ angular.module('functionJunctionApp', ['ngRoute'])
 				})
 		};
 		*/
+
+
 
 	}]);
