@@ -50,11 +50,28 @@ a {
     color: #00a6f0;
 }
 
+/*=== Override Bootstrap ===*/
+
+
+html, body {
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+* {
+    /*Do not include border or padding with width of object*/
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
 /*=== Overall Sizing ===*/
 
 .scrollable {
     position: absolute;
     width: 100%;
+    font-size: 16px;
+    line-height: 1.3;
 }
 
 /* center content and navbar */
@@ -96,7 +113,7 @@ a {
         image padding = 1rem 
         image size + header height = 240px
     */
-    min-height: calc(100vh - 1rem - 262px);
+    min-height: calc(100vh - 1rem - 256px);
     
     /* format */
     background-color: white;

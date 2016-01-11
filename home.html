@@ -1,1 +1,12 @@
-<p>home</p>
+<p>Home page content</p>
+<div style="height: 305px">
+	<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+		<uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
+			<img ng-src="{{slide.image}}" style="margin:auto;">
+			<div class="carousel-caption">
+				<h4>Slide {{slide.id}}</h4>
+				<p>{{slide.text}}</p>
+			</div>
+		</uib-slide>
+	</uib-carousel>
+</div>
