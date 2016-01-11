@@ -1,19 +1,5 @@
 "use strict";
 angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
-	.config(['$routeProvider',
-	  function($routeProvider) {
-	    $routeProvider
-	      .when('/home', {
-	        templateUrl: 'home.html',
-	        controller: 'HomeCtrl'
-	      })
-	      .when('/location', {
-	        templateUrl: 'location.html'
-	      })
-	      .otherwise({
-	        templateUrl: 'home.html'
-	      });
-	}])
 	.controller('MainCtrl', ['$scope', '$http', '$location', 
 		function($scope, $http, $location) {
 
@@ -83,4 +69,18 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 		for (var i = 0; i < 4; i++) {
 			$scope.addSlide();
 		}
+	}])
+	.config(['$routeProvider',
+	  function($routeProvider) {
+	    $routeProvider
+	      .when('/home', {
+	        templateUrl: 'home.html',
+	        controller: 'HomeCtrl'
+	      })
+	      .when('/location', {
+	        templateUrl: 'location.html'
+	      })
+	      .otherwise({
+	        templateUrl: 'home.html'
+	      });
 	}]);
