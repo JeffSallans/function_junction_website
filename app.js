@@ -52,23 +52,37 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 	.controller('HomeCtrl', ['$scope', function($scope) {
 		$scope.myInterval = 5000;
 		$scope.noWrapSlides = false;
-		var slides = $scope.slides = [];
+		$scope.slides = [
+		{
+			image: '//placekitten.com/600/300',
+			title: 'Pediatric Specialty',
+			text: 'Providing care for children and teens',
+			id: currIndex++
+		},
+		{
+			image: 'img/website/carousel/building.jpeg',
+			title: 'Now Open!',
+			text: 'January 14th',
+			id: currIndex++
+		},
+		{
+			image: 'img/website/carousel/sign.jpg',
+			title: 'Located on M-24',
+			text: '',
+			id: currIndex++
+		}
+		];
 		var currIndex = 0;
 
 		$scope.addSlide = function() {
-			var newWidth = 600 + slides.length + 1;
-			slides.push({
+			var newWidth = 600 + $scope.slides.length + 1;
+			$scope.slides.push({
 				image: '//placekitten.com/' + newWidth + '/300',
-				text: ['More','Extra','Lots of','Surplus'][slides.length % 4] + ' ' +
-				['Cats', 'Kittys', 'Felines', 'Cutes'][slides.length % 4],
+				text: ['More','Extra','Lots of','Surplus'][$scope.slides.length % 4] + ' ' +
+				['Cats', 'Kittys', 'Felines', 'Cutes'][$scope.slides.length % 4],
 				id: currIndex++
 			});
 		};
-
-		//Create initial slides
-		for (var i = 0; i < 4; i++) {
-			$scope.addSlide();
-		}
 	}])
 	.config(['$routeProvider',
 	  function($routeProvider) {

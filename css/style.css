@@ -12,6 +12,22 @@ dark-green= rgba(0,168,59,1)
 yellow= #ffb700
 */
 
+.red {
+    color: #ff4508;
+}
+
+.blue {
+    color: #00a6f0;
+}
+
+.green {
+    color: #6cba00;
+}
+
+.yellow {
+    color: #ffb700;
+}
+
 /*=== General Tags ===*/
 
 html, body {
@@ -48,6 +64,12 @@ h2 {
 
 a {
     color: #00a6f0;
+    text-decoration: underline;
+}
+
+a:focus, a:hover {
+    color: #6cba00;
+    text-decoration: none;
 }
 
 /*=== Override Bootstrap ===*/
@@ -210,6 +232,61 @@ img.profile {
 
 /*=== Page Specific ===*/
 
+/*home*/
+.carousel {
+    height: 18rem;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    background: #dddddd;
+}
+
+.hostess {
+    display: flex;
+}
+
+.hostess > div {
+    width: 33%;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    margin: 0.5rem;
+}
+
+.hostess > div p {
+    font-size: .9rem;
+}
+
+.hostess > div:hover span {
+    display: inline;
+}
+
+.hostess > div span {
+    display:none;
+    position: absolute;
+    bottom: .3rem;
+    right: .5rem;
+    font-size: .8rem;
+    color: #00a6f0;
+}
+
+.hostess > div:not(.well) {
+    padding-top: .8rem;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.hostess > div.well {
+    padding-top: .7rem;
+}
+
+.hostess > div.well:hover {
+    cursor: pointer;
+    border: 1px solid #00a6f0;
+}
+
+/*location*/
 .location {
 
     /*center map*/

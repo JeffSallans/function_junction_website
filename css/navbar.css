@@ -35,7 +35,11 @@
     color: black;
 }
 
-.side-nav a:hover, .side-nav .side-nav--active {
+.side-nav a:hover:not(.side-nav--active) {
+    color: white;
+    background-color: #6cba00;
+}
+.side-nav .side-nav--active {
     color: white;
     background-color: #00a6f0;
 }

@@ -1,12 +1,30 @@
-<p>Home page content</p>
-<div style="height: 305px">
+<div>
 	<uib-carousel interval="myInterval" no-wrap="noWrapSlides">
 		<uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
 			<img ng-src="{{slide.image}}" style="margin:auto;">
 			<div class="carousel-caption">
-				<h4>Slide {{slide.id}}</h4>
+				<h4>{{slide.title}}</h4>
 				<p>{{slide.text}}</p>
 			</div>
 		</uib-slide>
 	</uib-carousel>
+</div>
+<div class="hostess">
+	<div class="well">
+		<h4 class="red">How we can help?</h4>
+		<p></p>
+		<span>Go To Services</span>
+	</div>
+	<div>
+		<h4 class="yellow">Make an appointment</h4>
+		<p><i class="fa fa-map"></i> Mon-Thu 9am to 7pm</p>
+		<p><i class="fa fa-phone"></i> (810) 212-1134</p>
+		<p><i class="fa fa-envelope"></i> test@therapy.com</p>
+		<p><i class="fa fa-map"></i> <a>Google Maps</a></p>
+	</div>
+	<div class="well">
+		<h4 class="green">Who we are</h4>
+		<p>Read about our *describer* team.</p>
+		<span>Go To Staff</span>
+	</div>
 </div>
