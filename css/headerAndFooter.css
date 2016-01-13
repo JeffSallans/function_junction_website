@@ -6,7 +6,9 @@
 
 .header img {
     display: block;
-    margin: 1rem auto;
+
+    width: 500px;
+    margin: .2rem auto;
 }
 
 .header h2 {
@@ -39,6 +41,10 @@
     margin: 0 auto;
     color: #999999;
     font-size: .8rem;
+}
+
+.footer div {
+    display: inline-block;
 }
 
 .footer .footer__right {

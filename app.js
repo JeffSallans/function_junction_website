@@ -49,30 +49,34 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 
 
 	}])
-	.controller('HomeCtrl', ['$scope', function($scope) {
+	.controller('HomeCtrl', ['$scope', '$location', function($scope, $location) {
+		
 		$scope.myInterval = 5000;
 		$scope.noWrapSlides = false;
+
+		var currIndex = 0;
+
 		$scope.slides = [
-		{
+		/*{
 			image: '//placekitten.com/600/300',
 			title: 'Pediatric Specialty',
 			text: 'Providing care for children and teens',
 			id: currIndex++
 		},
+		*/
 		{
 			image: 'img/website/carousel/building.jpeg',
-			title: 'Now Open!',
-			text: 'January 14th',
+			title: '',
+			text: 'Open January 14th',
 			id: currIndex++
 		},
 		{
 			image: 'img/website/carousel/sign.jpg',
-			title: 'Located on M-24',
-			text: '',
+			title: '',
+			text: 'Located on M-24',
 			id: currIndex++
 		}
 		];
-		var currIndex = 0;
 
 		$scope.addSlide = function() {
 			var newWidth = 600 + $scope.slides.length + 1;
@@ -83,6 +87,14 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 				id: currIndex++
 			});
 		};
+
+		$scope.goToServices = function() {
+			$location.url('/services');
+		};
+
+		$scope.goToStaff = function() {
+			$location.url('/staff');
+		};
 	}])
 	.config(['$routeProvider',
 	  function($routeProvider) {
@@ -91,10 +103,17 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 	        templateUrl: 'home.html',
 	        controller: 'HomeCtrl'
 	      })
+	      .when('/services', {
+	        templateUrl: 'services.html'
+	      })
+	      .when('/staff', {
+	        templateUrl: 'staff.html'
+	      })
 	      .when('/location', {
 	        templateUrl: 'location.html'
 	      })
 	      .otherwise({
-	        templateUrl: 'home.html'
+	        templateUrl: 'home.html',
+	        controller: 'HomeCtrl'
 	      });
 	}]);

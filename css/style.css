@@ -38,6 +38,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Itim', cursive;
 }
 
+/* Show something while google maps are loading */
+iframe {
+    background-color: #dddddd;
+}
+
 .overlay {
     position: fixed;
     
@@ -46,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
 
     /* background */
-    background: url(../img/background.jpg) no-repeat center fixed; 
+    background: url(../img/website/background.jpg) no-repeat center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -241,6 +246,11 @@ img.profile {
     background: #dddddd;
 }
 
+/* Size images to fit */
+.carousel-inner>.item>img {
+    height: 18rem;
+}
+
 .hostess {
     display: flex;
 }
@@ -253,22 +263,27 @@ img.profile {
     margin: 0.5rem;
 }
 
+/* Format content */
+
 .hostess > div p {
     font-size: .9rem;
+    font-weight: 300;
 }
 
-.hostess > div:hover span {
-    display: inline;
+.hostess > div p > i {
+    margin-right: .4rem;
 }
 
-.hostess > div span {
-    display:none;
-    position: absolute;
-    bottom: .3rem;
-    right: .5rem;
-    font-size: .8rem;
-    color: #00a6f0;
+.hostess > div > h4 {
+    text-align: center;
 }
+
+.hostess > div:not(.well) > h4 {
+    margin-left: -.2rem;
+    margin-right: -.2rem;
+}
+
+/* Hover and show clickable logic */
 
 .hostess > div:not(.well) {
     padding-top: .8rem;
@@ -286,9 +301,49 @@ img.profile {
     border: 1px solid #00a6f0;
 }
 
+.hostess > div:hover span {
+    display: inline;
+}
+
+.hostess > div span {
+    display:none;
+    position: absolute;
+    bottom: .3rem;
+    right: .5rem;
+    font-size: .8rem;
+    color: #00a6f0;
+}
+
 /*location*/
 .location {
 
     /*center map*/
     text-align: center;
+}
+
+.info-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    font-size: .9em;
+    font-weight: 300;
+}
+
+.info-container .fa {
+    color: #00a6f0;
+}
+
+.info-container p {
+    display: block;
+    text-align: left;
+}
+
+.info-container .fa {
+    width: 1rem;
+    text-align: right;
+    padding-right: .3rem;
+}
+
+.info-container .info-container__hidden {
+    visibility: hidden;
 }
