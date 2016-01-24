@@ -1,7 +1,7 @@
 "use strict";
 angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
-	.controller('MainCtrl', ['$scope', '$http', '$location', 
-		function($scope, $http, $location) {
+	.controller('MainCtrl', ['$scope', '$http', '$location', '$anchorScroll',  
+		function($scope, $http, $location, $anchorScroll) {
 
 		//Date for Copyright
 		var date = new Date();
@@ -15,6 +15,9 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 		//Set listener to update if page change
 		$scope.$on('$locationChangeSuccess', function(event) {
 		  $scope.currentLocation = $location.url();
+
+		  //Scroll to top of page
+		  $anchorScroll();
 		});
 
 		//{bool} - True if the element is moved over the window
