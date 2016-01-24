@@ -1,20 +1,41 @@
 <div class="staff">
 	<div class="profile profile--red">
-		<img class="profile__pic" src="img/website/Dana.jpg">
-		<h3>Dana Gepfrey, OTRL</h3>
-		<p>Dana Gepfrey is the Executive Director (owner) and the Occupational Therapist. She has always dreamed of opening her own clinic and provide the best possible patient care. Dana has a passion for knowledge and will continue to research new treatment options for Autism and other pediatric conditions. Dana has a Master’s degree in Occupational Therapy along with a Bachelor of Science degree in Counseling Psychology. She specializes in pediatric and hand therapy and has extensive experience with sensory integration, developmental, and handwriting treatments. She also has training in oral motor, feeding, and torticollis treatments. In the adult population, Dana has experience in orthopedic and neurological conditions involving the upper extremities and abilities to perform activities of daily living. In her free time, she enjoys being outdoors, camping, swimming, and trying new arts and crafts.</p>
-		<p></p>
+		<span class="profile__pic" >
+			<img src="img/website/Dana.jpg">
+		</span>
+		<span class="profile__desc">
+			<h3>Dana Gepfrey, OTRL</h3>
+			<p>
+				<span>Dana Gepfrey is the Executive Director (owner) and the Occupational Therapist. She has always dreamed of opening her own clinic and provide the best possible patient care. Dana has a passion for knowledge and will continue to research new treatment options for Autism and other pediatric conditions. </span>
+				<a class="profile__readmore" ng-click="readmore('Dana')">Read More...</a>
+			</p>
+			<p class="profile__2-desc"
+				ng-class="{'profile__2-desc--show': showAdditionalDescription.Dana}">
+				Dana has a Master’s degree in Occupational Therapy along with a Bachelor of Science degree in Counseling Psychology. She specializes in pediatric and hand therapy and has extensive experience with sensory integration, developmental, and handwriting treatments. She also has training in oral motor, feeding, and torticollis treatments. In the adult population, Dana has experience in orthopedic and neurological conditions involving the upper extremities and abilities to perform activities of daily living. In her free time, she enjoys being outdoors, camping, swimming, and trying new arts and crafts.
+			</p>
+		</span>
 	</div>
-	<div class="profile profile--red">
-		<img class="profile__pic" src="img/website/Rebecca.jpg">
-		<h3>Rebecca Hughes, SLP</h3>
-		<p>Rebecca graduated from Oakland University with a bachelor’s in linguistics and received her master’s degree in speech-language pathology from Wayne State University. Rebecca is certified by the American Speech and Hearing Association, LSVT Loud certified, and trained in Language Acquisition through Motor Planning (LAMP). She is experienced in both adult and pediatric speech therapy, with extensive work with autism, apraxia, and augmentative/alternative communication. She is certified in the Listening Program. Rebecca enjoys spending time with her husband and two children, as well as the family’s two dogs.</p>
-		<p></p>
+	<div class="profile profile--yellow">
+		<span class="profile__pic" >
+			<img src="img/website/Rebecca.jpg">
+		</span>
+		<span class="profile__desc">
+			<h3>Rebecca Hughes, SLP</h3>
+			<p>Rebecca graduated from Oakland University with a bachelor’s in linguistics and received her master’s degree in speech-language pathology from Wayne State University. Rebecca is certified by the American Speech and Hearing Association, LSVT Loud certified, and trained in Language Acquisition through Motor Planning (LAMP). 
+			<a class="profile__readmore" ng-click="readmore('Rebecca')">Read More...</a></p>
+			<p class="profile__2-desc"
+				ng-class="{'profile__2-desc--show': showAdditionalDescription.Rebecca}">
+				She is experienced in both adult and pediatric speech therapy, with extensive work with autism, apraxia, and augmentative/alternative communication. She is certified in the Listening Program. Rebecca enjoys spending time with her husband and two children, as well as the family’s two dogs.
+			</p>
+		</span>
 	</div>
-	<div class="profile profile--red">
-		<img class="profile__pic" src="img/website/Fran.jpg">
-		<h3>Fran Kobus, Office Manager and Patient Care Coordinator</h3>
-		<p>The office manager and patient care coordinator is Fran Kobus. She will be executing most of the administrative tasks including; scheduling/confirming patient visits, managing insurance contracts, ratify co-pays and benefits, and obtaining payments. She is a great people person and can easily build rapport. She can cheer up anyone on a bad day. She has a 16 year old son and enjoys family time with him.</p>
-		<p></p>
+	<div class="profile profile--green">
+		<span class="profile__pic" >
+			<img src="img/website/Fran.jpg">
+		</span>
+		<span class="profile__desc">
+			<h3>Fran Kobus, Office Manager and Patient Care Coordinator</h3>
+			<p>The office manager and patient care coordinator is Fran Kobus. She will be executing most of the administrative tasks including; scheduling/confirming patient visits, managing insurance contracts, ratify co-pays and benefits, and obtaining payments. She is a great people person and can easily build rapport. She can cheer up anyone on a bad day. She has a 16 year old son and enjoys family time with him.</p>
+		</span>
 	</div>
 </div>

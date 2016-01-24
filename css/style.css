@@ -70,6 +70,7 @@ h2 {
 a {
     color: #00a6f0;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 a:focus, a:hover {
@@ -312,6 +313,138 @@ img.profile {
     right: .5rem;
     font-size: .8rem;
     color: #00a6f0;
+}
+
+/*staff*/
+
+/*
+    ___ How To Use ___
+    .profile = Use to define
+    <div class="profile profile--red">
+        <span class="profile__pic" >
+            <img>
+        </span>
+        <span>
+            <h3>Name</h3>
+            <p>
+                Profile description
+                <a class="profile__readmore">Read More...</a>
+            </p>
+            <p>Profile additional details</p>
+        </span>
+    </div>
+
+    ___ Options ___
+    .profile--red = border element is red
+    .profile--blue = border element is blue
+    .profile--gree = border element is green
+*/
+.profile {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #aaa;
+}
+
+.profile:last-of-type {
+    border-bottom: 0;
+}
+
+.profile > span {
+    margin: 1rem;
+    position: relative;
+}
+
+.profile.profile--red .profile__pic {
+    border: 5px solid #ff4508;
+}
+
+.profile.profile--yellow .profile__pic {
+    border: 5px solid #ffb700;
+}
+
+.profile.profile--green .profile__pic {
+    border: 5px solid #6cba00;
+}
+
+.profile .profile__pic {
+
+    /* Image absolute is relative to frame */
+    position: relative;
+    display: inline-block;
+
+    /* Circle crop */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ff4508;
+    z-index: 1;
+
+    /* sizing */
+    box-sizing: border-box;
+    width: 13rem;
+    height: 13rem;
+
+    /* shadow */
+    -webkit-box-shadow: 10px 7px 25px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 7px 25px -5px rgba(0,0,0,0.75);
+    box-shadow: 9px 7px 10px -5px rgba(0,0,0,0.55);
+}
+
+.profile .profile__pic img {
+    position: absolute;
+    display: inline-block;
+
+    width: 100%;
+    height: auto;
+
+    /* ___ vertical overflow crop ___ */
+    /* ASSUME -10rem is much larger than the image */
+    top: -10rem;
+    bottom: -10rem;
+    left: 0;
+
+    /* Center vertically */
+    margin: auto 0;
+}
+
+.profile .profile__desc {
+    position: relative;
+    display: inline-block;
+    width: 20rem;
+    text-overflow: ellipsis;
+}
+
+.profile .profile__desc h3 {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+}
+
+.profile .profile__desc p {
+    font-size: .95rem;
+
+    /* This should not happen we should show read more before this */
+    max-height: 11rem;
+    overflow: hidden;
+}
+
+/* Don't break up read more... */
+.profile .profile__readmore {
+    white-space: nowrap;
+}
+
+/* Default hidden */
+.profile p.profile__2-desc {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 2s;
+}
+
+/* Show by animation */
+.profile p.profile__2-desc.profile__2-desc--show {
+    max-height: 40rem;
 }
 
 /*location*/

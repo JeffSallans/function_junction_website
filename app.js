@@ -96,6 +96,15 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 			$location.url('/staff');
 		};
 	}])
+	.controller('StaffCtrl', ['$scope', function($scope) {
+
+		//{Object with bool properties}
+		$scope.showAdditionalDescription = {};
+
+		$scope.readmore = function(profileName) {
+			$scope.showAdditionalDescription[profileName] = true;
+		}
+	}])
 	.config(['$routeProvider',
 	  function($routeProvider) {
 	    $routeProvider
@@ -107,7 +116,8 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 	        templateUrl: 'services.html'
 	      })
 	      .when('/staff', {
-	        templateUrl: 'staff.html'
+	        templateUrl: 'staff.html',
+	        controller: 'StaffCtrl'
 	      })
 	      .when('/location', {
 	        templateUrl: 'location.html'
