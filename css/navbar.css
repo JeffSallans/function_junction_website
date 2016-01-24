@@ -9,7 +9,9 @@
 
     background: white;
     top: 1rem;
-    width: 10rem;
+    width: 15rem;
+    /*Make navbar a little bigger*/
+    font-size: 1.2rem;
 
     -webkit-box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5);
     -moz-box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5);

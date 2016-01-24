@@ -109,7 +109,7 @@ html, body {
     position: relative;
 
     margin: 0 auto;
-    width: 50rem;
+    width: 60rem;
 }
 
 .container > div {
@@ -119,10 +119,10 @@ html, body {
     margin-left: 10rem;
 
     /*
-    container width= 50rem
+    container width= 60rem
     margin = 10rem
     */
-    width: calc(50rem - 10rem);
+    width: calc(60rem - 10rem);
 }
 
 .container > div > div {
@@ -240,7 +240,7 @@ img.profile {
 
 /*home*/
 .carousel {
-    height: 18rem;
+    height: 23rem;
     margin-top: -2rem;
     margin-left: -1rem;
     margin-right: -1rem;
@@ -249,7 +249,7 @@ img.profile {
 
 /* Size images to fit */
 .carousel-inner>.item>img {
-    height: 18rem;
+    height: 23rem;
 }
 
 /* Default carousel overrides */
@@ -464,6 +464,9 @@ img.profile {
     /* This should not happen we should show read more before this */
     max-height: 11rem;
     overflow: hidden;
+
+    /* Change text color for easier reading */
+    color: #777;
 }
 
 /* Don't break up read more... */
