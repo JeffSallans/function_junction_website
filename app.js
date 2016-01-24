@@ -1,5 +1,5 @@
 "use strict";
-angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
+angular.module('functionJunctionApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 	.controller('MainCtrl', ['$scope', '$http', '$location', '$anchorScroll',  
 		function($scope, $http, $location, $anchorScroll) {
 

@@ -252,6 +252,18 @@ img.profile {
     height: 18rem;
 }
 
+/* Default carousel overrides */
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 0rem;
+    }
+
+    .carousel-caption {
+        padding-bottom: 0.5rem;
+    }
+}
+
 .hostess {
     display: flex;
 }
