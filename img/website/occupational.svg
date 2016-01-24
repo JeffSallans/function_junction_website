@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.0.0.4-->
+<svg stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="1224pt" height="926.547pt" viewBox="0 0 1224 926.547">
+ <defs>
+  <linearGradient id="LinearGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_3" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_4" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_5" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_6" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+  <linearGradient id="LinearGradient_7" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="-83.282" y2="578.718" gradientTransform="translate(1375.41 -35.835)">
+   <stop offset="0" stop-color="#bb8703"/>
+   <stop offset="1" stop-color="#ffb700"/>
+  </linearGradient>
+ </defs>
+ <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
+  <g id="Spread" transform="translate(0 -926.547)">
+   <g id="Layer 1">
+    <path d="M 453.05,314.952 C 402.487,350.404 387.672,415.079 367.435,452.872 L 366.777,454.264 L 365.934,456.251 L 365.474,457.458 C 360.137,473.176 363.972,503.419 369.524,534.497 C 375.48,567.848 384.921,608.384 395.408,648.253 C 410.013,703.811 428.6,765.427 442.622,800.276 L 448.089,812.75 L 447.663,815.809 C 448.068,822.503 452.392,828.633 459.108,831.012 C 472.11,835.602 485.377,837.745 497.066,833.286 C 502.934,831.054 507.756,827.376 511.422,822.659 C 522.07,808.945 521.209,788.405 519.484,772.687 C 517.573,755.323 513.16,734.61 509.688,715.825 C 502.259,675.716 501.496,653.299 507.988,642.929 C 507.862,641.474 508.275,639.833 509.279,638.432 C 531.236,607.494 542.521,582.912 544.651,557.884 C 546.777,532.851 539.825,506.283 523.006,471.181 C 521.293,467.616 522.804,463.33 526.372,461.613 C 529.941,459.909 534.223,461.419 535.94,464.992 C 553.228,501.069 561.382,530.371 558.944,559.099 C 556.611,586.566 544.677,612.522 523.905,642.55 L 534.949,642.486 C 546.634,642.752 555.396,643.727 560.488,645.52 C 606.773,661.816 639.298,712.413 673.147,768.401 C 702.23,816.517 738.378,880.824 790.481,890.957 C 795.193,891.877 800.087,890.776 803.964,887.933 C 811.262,882.562 818.218,877.007 822.496,870.405 C 826.406,864.364 827.836,857.99 827.292,851.362 C 826.659,843.6 822.12,832.497 819.754,824.946 C 812.679,802.309 780.146,759.858 753.645,722.98 C 741.8,692.742 701.458,660.398 710.637,646.629 C 728.714,637.622 773.645,690.388 813.73,718.934 C 853.666,748.654 917.813,805.161 956.13,780.639 C 958.252,779.293 960.049,777.488 961.534,775.142 C 968.182,764.457 973.308,741.909 966.267,725.714 C 964.209,720.964 960.703,715.893 955,712.337 C 934.679,699.673 882.276,655.205 836.86,621.385 C 807.073,594.619 750.751,560.082 763.424,550.248 C 782.989,545.625 827.385,561.183 875.852,581.444 C 911.819,593.906 969.465,615.513 993.333,611.877 C 995.894,611.485 998.345,610.523 1000.48,609.046 C 1032.41,587.114 1026.39,550.379 995.666,532.235 C 948.313,504.258 875.615,490.113 823.609,476.952 C 797.539,467.27 781.741,457.563 784.078,444.688 C 805.377,434.876 830.625,441.33 855.261,445.245 C 888.161,456.741 972.92,454.231 974.548,433.214 C 974.649,417.703 974.886,408.747 953.89,396.496 C 919.226,376.264 882.023,377.234 838.421,368.059 C 801.222,365.646 765.668,355.129 752.624,353.147 L 748.604,352.235 C 679.382,308.076 550.979,246.287 453.05,314.952 Z M 749.498,352.792 L 748.541,352.218 L 749.498,352.792 Z" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" fill="url(#LinearGradient)"/>
+    <path d="M 756.577,223.659 L 1188,223.659 L 1188,198.411 L 1125.28,138.571 L 810.886,138.571 L 756.577,196.116 L 756.577,223.659 Z" stroke-width="2.135" stroke="none" stroke-linecap="round" stroke-linejoin="round" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="url(#LinearGradient_1)"/>
+    <path d="M 35.999,234.83 L 35.999,298.504 L 447.794,298.504 C 449.503,297.171 451.253,295.867 453.05,294.615 C 527.022,242.748 618.378,265.317 688.503,298.504 L 1188,298.504 L 1188,234.83 L 35.999,234.83 Z" stroke="none" stroke-linejoin="miter" marker-start="none" marker-end="none" fill="url(#LinearGradient_2)"/>
+    <path d="M 987.398,130.071 L 1030.45,130.185 L 1131.62,130.185 L 1168.72,165.224 C 1173.76,152.973 1176.28,139.466 1175.68,125.372 C 1173.42,73.429 1129.43,33.117 1077.49,35.361 C 1025.54,37.618 985.141,78.133 987.398,130.071 Z" stroke-width="1.911" stroke-linecap="round" stroke="none" stroke-linejoin="round" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="url(#LinearGradient_3)"/>
+    <path d="M 951.055,130.071 L 908.001,130.185 L 806.837,130.185 L 769.735,165.224 C 764.694,152.973 762.171,139.466 762.783,125.372 C 765.031,73.429 809.026,33.117 860.964,35.361 C 912.911,37.618 953.312,78.133 951.055,130.071 Z" stroke-width="1.911" stroke-linecap="round" stroke="none" stroke-linejoin="round" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="url(#LinearGradient_4)"/>
+    <path d="M 35.999,223.659 L 467.423,223.659 L 467.423,198.411 L 404.689,138.571 L 90.304,138.571 L 35.999,196.116 L 35.999,223.659 Z" stroke-width="2.135" stroke="none" stroke-linecap="round" stroke-linejoin="round" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="url(#LinearGradient_5)"/>
+    <path d="M 266.815,130.071 L 309.87,130.185 L 411.034,130.185 L 448.136,165.224 C 453.177,152.973 455.7,139.466 455.092,125.372 C 452.835,73.429 408.844,33.117 356.902,35.361 C 304.959,37.618 264.558,78.133 266.815,130.071 Z" stroke-width="1.911" stroke-linecap="round" stroke="none" stroke-linejoin="round" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="url(#LinearGradient_6)"/>
+    <path d="M 230.473,130.071 L 187.419,130.185 L 86.254,130.185 L 49.152,165.224 C 44.107,152.973 41.588,139.466 42.2,125.372 C 44.453,73.429 88.448,33.117 140.386,35.361 C 192.329,37.618 232.725,78.133 230.473,130.071 Z" stroke-width="1.911" stroke-linecap="round" stroke="none" stroke-linejoin="round" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="url(#LinearGradient_7)"/>
+   </g>
+  </g>
+ </g>
+</svg>

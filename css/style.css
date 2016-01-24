@@ -257,7 +257,7 @@ img.profile {
 }
 
 .hostess > div {
-    width: 33%;
+    width: 30%;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
@@ -279,23 +279,34 @@ img.profile {
     text-align: center;
 }
 
+/* Center container */
+
 .hostess > div:not(.well) > h4 {
     margin-left: -.2rem;
     margin-right: -.2rem;
 }
 
-/* Hover and show clickable logic */
-
 .hostess > div:not(.well) {
+
+    width: 38%;
     padding-top: .8rem;
     border-radius: 4px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     border: 1px solid white;
 }
 
 .hostess > div.well {
     padding-top: .7rem;
 }
+
+.hostess .hostess__email {
+    font-size: .8rem;
+}
+
+/* Hover and show clickable logic */
 
 .hostess > div.well:hover {
     cursor: pointer;
@@ -320,24 +331,30 @@ img.profile {
 /*
     ___ How To Use ___
     .profile = Use to define
-    <div class="profile profile--red">
+    <div class="profile">
         <span class="profile__pic" >
             <img>
         </span>
-        <span>
+        <span class="profile__desc">
             <h3>Name</h3>
             <p>
                 Profile description
                 <a class="profile__readmore">Read More...</a>
             </p>
-            <p>Profile additional details</p>
+            <p class="profile__2-desc">Profile additional details</p>
         </span>
     </div>
 
     ___ Options ___
+    .profile--noborder = remove picture border and shadow
+        use: <div class="profile profile--noborder">
+    .profile__2-desc--show = shows the additional details
+        use: <p class="profile__2-desc profile__2-desc--show">
     .profile--red = border element is red
-    .profile--blue = border element is blue
-    .profile--gree = border element is green
+        use: <div class="profile profile--red">
+    .profile--yellow = border element is yellow
+    .profile--green = border element is green
+
 */
 .profile {
     display: flex;
@@ -367,6 +384,14 @@ img.profile {
 
 .profile.profile--green .profile__pic {
     border: 5px solid #6cba00;
+}
+
+.profile.profile.profile--noborder .profile__pic {
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .profile .profile__pic {
@@ -479,4 +504,8 @@ img.profile {
 
 .info-container .info-container__hidden {
     visibility: hidden;
+}
+
+.info-container .info-container__email {
+    font-size: 0.8rem;
 }

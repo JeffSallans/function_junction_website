@@ -99,11 +99,26 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 			$location.url('/staff');
 		};
 	}])
+	.controller('ServiceCtrl', ['$scope', function($scope) {
+
+		//{Object with bool properties}
+		$scope.showAdditionalDescription = {};
+
+		//Shows additional description details
+		//@param serviceName {string} - Name of profile to show 2nd description
+		//@modifies $scope.showAdditionalDescription
+		$scope.readmore = function(serviceName) {
+			$scope.showAdditionalDescription[serviceName] = true;
+		}
+	}])
 	.controller('StaffCtrl', ['$scope', function($scope) {
 
 		//{Object with bool properties}
 		$scope.showAdditionalDescription = {};
 
+		//Shows additional description details
+		//@param profileName {string} - Name of profile to show 2nd description
+		//@modifies $scope.showAdditionalDescription
 		$scope.readmore = function(profileName) {
 			$scope.showAdditionalDescription[profileName] = true;
 		}
@@ -116,7 +131,8 @@ angular.module('functionJunctionApp', ['ngRoute', 'ui.bootstrap'])
 	        controller: 'HomeCtrl'
 	      })
 	      .when('/services', {
-	        templateUrl: 'services.html'
+	        templateUrl: 'services.html',
+	        controller: 'ServiceCtrl'
 	      })
 	      .when('/staff', {
 	        templateUrl: 'staff.html',
