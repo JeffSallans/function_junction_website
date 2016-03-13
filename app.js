@@ -68,15 +68,21 @@ angular.module('functionJunctionApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 		},
 		*/
 		{
-			image: 'img/website/carousel/building.jpeg',
+			image: 'img/website/carousel/jar.jpg',
 			title: '',
-			text: 'Open January 14th',
+			text: '',
 			id: currIndex++
 		},
 		{
-			image: 'img/website/carousel/sign.jpg',
+			image: 'img/website/carousel/balance.jpg',
 			title: '',
-			text: 'Located on M-24',
+			text: '',
+			id: currIndex++
+		},
+		{
+			image: 'img/website/carousel/office.jpg',
+			title: '',
+			text: '',
 			id: currIndex++
 		}
 		];
