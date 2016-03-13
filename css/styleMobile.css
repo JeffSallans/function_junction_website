@@ -28,13 +28,6 @@ yellow= #ffb700
     color: #ffb700;
 }
 
-/*=== Media Queries ===*/
-
-/* Everything 700px and lower */
-@import url("/css/styleMobile.css") only screen and (max-width: 700px);
-@import url("/css/navbarMobile.css") only screen and (max-width: 700px);
-@import url("/css/headerAndFooterMobile.css") only screen and (max-width: 700px);
-
 /*=== General Tags ===*/
 
 html, body {
@@ -58,7 +51,7 @@ iframe {
     height: 100vh;
 
     /* background */
-    background: url(../img/website/background.jpg) no-repeat center fixed; 
+    /* background: url(../img/website/background.jpg) no-repeat center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -113,23 +106,26 @@ html, body {
 .container {
 
     /*To make side-nav absolute positioning relative to this*/
-    position: relative;
 
-    margin: 0 auto;
-    width: 60rem;
+position: relative;
+
+margin: 0 auto;
+
+width: 100%;
 }
 
 .container > div {
 
-    position: absolute;
+position: absolute;
 
-    margin-left: 10rem;
+/* margin-left: 10rem; */
 
     /*
     container width= 60rem
     margin = 10rem
     */
-    width: calc(60rem - 10rem);
+
+width: 100%;
 }
 
 .container > div > div {
@@ -273,10 +269,11 @@ img.profile {
 
 .hostess {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hostess > div {
-    width: 30%;
+    width: 100%;
     box-sizing: border-box;
     display: inline-block;
     position: relative;
@@ -286,7 +283,7 @@ img.profile {
 /* Format content */
 
 .hostess > div p {
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -296,6 +293,7 @@ img.profile {
 
 .hostess > div > h4 {
     text-align: center;
+    font-size: 1.3rem;
 }
 
 /* Center container */
@@ -305,16 +303,27 @@ img.profile {
     margin-right: -.2rem;
 }
 
+.hostess > div:not(.well) > p {
+    font-size: 1.2rem
+}
+
 .hostess > div:not(.well) {
 
-    width: 38%;
-    padding-top: .8rem;
-    border-radius: 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid white;
+/* width: 38%; */
+
+padding-top: .8rem;
+
+border-radius: 4px;
+
+padding-top: 10px;
+
+padding-bottom: 10px;
+
+padding-left: 5px;
+
+padding-right: 5px;
+
+border: 1px solid white;
 }
 
 .hostess > div.well {
@@ -322,7 +331,7 @@ img.profile {
 }
 
 .hostess .hostess__email {
-    font-size: .8rem;
+    font-size: 1.2rem;
 }
 
 /* Hover and show clickable logic */
@@ -530,4 +539,10 @@ img.profile {
 
 .info-container .info-container__email {
     font-size: 0.8rem;
+}
+
+@media only screen and (max-device-width: 480px) {
+    
+    
+    
 }

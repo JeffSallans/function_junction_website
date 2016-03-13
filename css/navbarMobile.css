@@ -1,0 +1,64 @@
+/*=== Navbar Logic ===*/
+
+.container .side-nav {
+    display: block;
+    position: relative;
+
+    /* Reset container style */
+    margin-left: 0;
+    background: white;
+    /* top: 1rem; */
+    /* width: 15rem; */
+    /*Make navbar a little bigger*/
+    font-size: 1.2rem;
+    /* -webkit-box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5); */
+    -moz-box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5);
+    /* box-shadow: 0px 0px 41px 0px rgba(136,136,136,0.8), inset -10px 0px 10px -5px rgba(136,136,136,0.5); */
+    z-index: 12;
+    /* box-sizing: border-box; */
+    padding-bottom: .3rem;
+}
+
+.side-nav.side-nav--fixed.side-nav--fixed {
+/* position: fixed; */
+
+    /*
+    height of titlebar = 4rem
+    space from titlebar = 1rem
+    */
+/* top: 5rem; */
+}
+
+.side-nav a {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    /* margin-bottom: .3rem; */
+    margin-top: .3rem;
+    /* box-sizing: border-box; */
+}
+
+.side-nav a:hover:not(.side-nav--active) {
+    color: white;
+    background-color: #6cba00;
+}
+.side-nav .side-nav--active {
+    color: white;
+    background-color: #00a6f0;
+}
+
+.side-nav .side-nav__arrow-icon {
+    height: 1rem;
+    background-color: rgba(0, 0, 0, .2);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    /* width: 2rem; */
+}
+
+.side-nav .side-nav__desc {
+    height: 1rem;
+}

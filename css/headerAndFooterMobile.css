@@ -1,0 +1,59 @@
+/*=== Page header logic ===*/
+
+.header {
+    background-color: white;
+}
+
+.header img {
+    display: block;
+    width: 80%;
+    margin: .2rem auto;
+
+    /* Align with page offset */
+    /* padding-left: 10rem; */
+}
+
+.header h2 {
+    color: white;
+    background-color: #00a6f0;
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+
+    /* Align with page offset */
+    /* padding-left: 5rem; */
+    font-size: 1.6rem;
+}
+
+.header .header__sub-header {
+    font-family: sans-serif;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    font-size: .8rem;
+    margin-top: .5rem;
+}
+
+.header .header--fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 50;
+}
+
+.footer {
+background-color: white;
+width: 100%;
+padding: .3rem 1rem;
+margin: 0 auto;
+color: #999999;
+font-size: .8rem;
+box-sizing: border-box;
+}
+
+.footer div {
+    display: inline-block;
+}
+
+.footer .footer__right {
+    /* float: right; */
+    display: none;
+}
