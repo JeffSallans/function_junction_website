@@ -74,6 +74,22 @@ h2 {
     letter-spacing: .15rem;
 }
 
+/* 
+    The go to header.
+    Colorful, easy to read
+*/
+h3 {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    color: #00a6f0;
+
+    /* Color is purposefully darker and then we lighten up with opacity */
+    opacity: .7;
+}
+
 a {
     color: #00a6f0;
     text-decoration: underline;
@@ -142,13 +158,13 @@ html, body {
 
     /* pos to stack content over nav bar*/
     position: absolute;
+    box-sizing: border-box;
 
     /* 
         view port height = 100vh
-        image padding = 1rem 
-        image size + header height = 240px
+        footer height + header height = 210px
     */
-    min-height: calc(100vh - 1rem - 256px);
+    min-height: calc(100vh - 210px);
     
     /* format */
     background-color: white;
@@ -168,6 +184,8 @@ html, body {
 
 .flex-container {
 	
+    display: flex;
+
 	/*take up parent size*/
 	width: 100%;
 
@@ -175,15 +193,6 @@ html, body {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-}
-
-/*
-If flex container is large enough,
-allow context to become two columns
-*/
-.flex-container .possible-half {
-	flex-grow: 1;
-    flex-basis: 300px;
 }
 
 /*=== Location ===*/
@@ -347,8 +356,16 @@ img.profile {
 
 /* insurance */
 
+.insurance .flex-container {
+
+    line-height: 8rem;
+}
+
 /* Health Plan shows grey but gains color when hovering */
 .insurance .health-plan {
+
+    /* flex box width */
+    flex-basis: 13rem;
 
     /* Styles to be overwritten */
     -webkit-filter: grayscale(100%);
@@ -363,6 +380,12 @@ img.profile {
 
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+
+}
+
+/* Option to now show health plan */
+.insurance .health-plan--disabled {
+    display: none;
 }
 
 .insurance .health-plan:hover {
@@ -371,6 +394,10 @@ img.profile {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     opacity: 1;
+}
+
+.insurance .health-plan .health-plan__img {
+    width: 100%;
 }
 
 /*staff*/
