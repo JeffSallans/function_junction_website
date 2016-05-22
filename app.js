@@ -117,6 +117,9 @@ angular.module('functionJunctionApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 			$scope.showAdditionalDescription[serviceName] = true;
 		}
 	}])
+	.controller('InsuranceCtrl', ['$scope', function($scope) {
+
+	}])
 	.controller('StaffCtrl', ['$scope', function($scope) {
 
 		//{Object with bool properties}
@@ -139,6 +142,10 @@ angular.module('functionJunctionApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 	      .when('/services', {
 	        templateUrl: 'services.html',
 	        controller: 'ServiceCtrl'
+	      })
+  	      .when('/insurance', {
+	        templateUrl: 'insurance.html',
+	        controller: 'InsuranceCtrl'
 	      })
 	      .when('/staff', {
 	        templateUrl: 'staff.html',
