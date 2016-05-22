@@ -8,6 +8,18 @@ A business website for Function Junction to provice current and potentical clien
 
 Expose the root folder (and subfolders) to the web.
 
+### Using Nodejs method
+
+Install [nodejs](https://nodejs.org/en/)
+
+Run in the root project directory
+
+```bash
+$ npm install -g http-server
+
+$ http-server 
+```
+
 ## Conventions
 
 [b]jsDocs[/b] - JavaScript function documentation. 
