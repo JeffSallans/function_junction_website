@@ -345,6 +345,34 @@ img.profile {
     color: #00a6f0;
 }
 
+/* insurance */
+
+/* Health Plan shows grey but gains color when hovering */
+.insurance .health-plan {
+
+    /* Styles to be overwritten */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.75;
+
+    /* Animation logic */
+    -webkit-transition: -webkit-filter 0.2s ease, opacity 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.insurance .health-plan:hover {
+
+    /* Show color */
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
 /*staff*/
 
 /*

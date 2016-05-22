@@ -39,7 +39,7 @@
 			<h2 class="header--fixed" ng-show="showStaticHeader">
 				Function Junction Therapy, LLC
 				<div class="header__sub-header">
-					Occupational - Physical - Speech
+					Physical - Occupational - Speech
 				</div>
 			</h2>
 		</div>
@@ -47,13 +47,19 @@
 			<div class="side-nav" ng-class="{'side-nav--fixed': showStaticHeader}">
 				<a href="index.html#/home"
 				ng-class="{'side-nav--active': currentLocation != '/services' &&
-				currentLocation != '/staff' && currentLocation != '/location'}">
+				currentLocation != '/insurance' &&
+				currentLocation != '/staff' &&
+				currentLocation != '/location'}">
 					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
 					<span class="side-nav__desc">Home</span></a>
 				<a href="index.html#/services"
 				ng-class="{'side-nav--active': currentLocation == '/services'}">
 					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
 					<span class="side-nav__desc">Services</span></a>
+				<a href="index.html#/insurance"
+				ng-class="{'side-nav--active': currentLocation == '/insurance'}">
+					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
+					<span class="side-nav__desc">Insurance</span></a>
 				<a href="index.html#/staff"
 				ng-class="{'side-nav--active': currentLocation == '/staff'}">
 					<span class="side-nav__arrow-icon"><i class="fa fa-angle-right"></i></span>
