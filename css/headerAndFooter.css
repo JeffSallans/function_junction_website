@@ -15,6 +15,8 @@
 }
 
 .header h2 {
+    position: relative;
+
     color: white;
     background-color: #00a6f0;
     width: 100%;
@@ -24,6 +26,9 @@
 
     /* Align with page offset */
     padding-left: 5rem;
+
+    /* So shadows of the page don't overlap the header */
+    z-index: 4;
 }
 
 .header .header__sub-header {
