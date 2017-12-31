@@ -1,0 +1,27 @@
+{
+  "name": "function_junction",
+  "version": "1.0.0",
+  "description": "Function Junction Therapy website",
+  "main": "app.js",
+  "scripts": {
+    "debug": "http-server -c-1",
+    "cypress:open": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffSallans/function_junction_website.git"
+  },
+  "author": "Jeff Sallans",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/JeffSallans/function_junction_website/issues"
+  },
+  "homepage": "https://github.com/JeffSallans/function_junction_website#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {
+    "cypress": "^1.4.1"
+  }
+}

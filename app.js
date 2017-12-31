@@ -68,13 +68,13 @@ angular.module('functionJunctionApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 		},
 		*/
 		{
-			image: 'img/website/carousel/jar.jpg',
+			image: 'img/website/carousel/experienced-v2.jpg',
 			title: '',
 			text: '',
 			id: currIndex++
 		},
 		{
-			image: 'img/website/carousel/balance.jpg',
+			image: 'img/website/carousel/accepting-new-patients-v2.jpg',
 			title: '',
 			text: '',
 			id: currIndex++
@@ -86,16 +86,6 @@ angular.module('functionJunctionApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 			id: currIndex++
 		}
 		];
-
-		$scope.addSlide = function() {
-			var newWidth = 600 + $scope.slides.length + 1;
-			$scope.slides.push({
-				image: '//placekitten.com/' + newWidth + '/300',
-				text: ['More','Extra','Lots of','Surplus'][$scope.slides.length % 4] + ' ' +
-				['Cats', 'Kittys', 'Felines', 'Cutes'][$scope.slides.length % 4],
-				id: currIndex++
-			});
-		};
 
 		$scope.goToServices = function() {
 			$location.url('/services');
